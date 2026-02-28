@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: 'Bookchaowalit',
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image.svg',
         width: 1200,
         height: 630,
         alt: 'Bookchaowalit',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Bookchaowalit - Bookchaowalit',
     description: 'Bookchaowalit by Bookchaowalit - A modern web application built with Next.js',
-    images: ['/og-image.png'],
+    images: ['/og-image.svg'],
     creator: '@bookchaowalit',
   },
   robots: {
