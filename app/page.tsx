@@ -41,6 +41,20 @@ export default function Home() {
           <Link href="https://github.com/bookchaowalit" className="text-blue-600 dark:text-blue-400 hover:underline">
             View Source Code →
           </Link>
+      {/* More Projects Link */}
+      <div className="text-center py-8">
+        <Link
+          href="/more-projects"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+        >
+          <span>🚀</span>
+          <span>Explore More Projects</span>
+        </Link>
+        <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
+          Discover 100+ more apps and tools
+        </p>
+      </div>
+
         </div>
       </div>
     </div>

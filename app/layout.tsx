@@ -69,6 +69,55 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+  {/* Structured Data for SEO */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebApplication',
+        name: 'Ab Testing',
+        url: 'https://bookchaowalit-ab-testing.vercel.app',
+        description: 'Ab Testing by Bookchaowalit - A modern web application',
+        applicationCategory: 'UtilitiesApplication',
+        operatingSystem: 'Web',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD'
+        },
+        author: {
+          '@type': 'Person',
+          name: 'Bookchaowalit',
+          url: 'https://bookchaowalit.com'
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Bookchaowalit',
+          url: 'https://bookchaowalit.com'
+        }
+      })
+    }}
+  />
+
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Ab Testing',
+        url: 'https://bookchaowalit-ab-testing.vercel.app',
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: 'https://bookchaowalit-ab-testing.vercel.app/more-projects',
+          'query-input': 'required name=search_term'
+        }
+      })
+    }}
+  />
+
+
         {children}
       </body>
     </html>
